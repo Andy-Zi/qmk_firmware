@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
        KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, KC_LSFT,  M_UNDS,  M_MINS,  M_LBRC, KC_LCBR,                      KC_RCBR,  M_RBRC,  M_PLUS,   M_EQL, KC_RSFT, _______,
+      _______, KC_LSFT, KC_UNDS,  M_MINS,  M_LBRC, KC_LCBR,                      KC_RCBR,  M_RBRC, KC_PLUS,   M_EQL, KC_RSFT, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, KC_TRNS,KC_SPACE,   KC_ENTER,   MO(3), _______
                                       //`--------------------------'  `--------------------------'
@@ -94,4 +94,3 @@ void keyboard_post_init_user(void) {
     rgblight_sethsv_noeeprom(HSV_BLACK);
     rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
 }
-
